@@ -1,0 +1,21 @@
+{
+  "name": "budget-webapp",
+  "version": "0.1.0",
+  "description": "Budget Webapp First Draft",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx pm2 start app.js --watch"
+  },
+  "author": "Farrell Coleman",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.1-alpha.1",
+    "mysql": "^2.16.0",
+    "req-flash": "0.0.3"
+  },
+  "devDependencies": {
+    "pm2": "^2.10.3"
+  }
+}

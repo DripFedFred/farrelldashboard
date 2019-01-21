@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+    <div class="container">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        
+        <form class="add-user-form" action="" method="post" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="first_name" id="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="last_name" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="email_address" id="email-address" placeholder="Email Address" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" name="password" id="password" placeholder="Password" required>
+                </div>
+            </div>
+                <div class="col-md-12">
+                    <label for="user-img"><b>User Image</b></label><br>
+                    <input type="file" name="image" id="user-img" class="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Add User</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
